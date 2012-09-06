@@ -8,6 +8,20 @@
   <version>0.2.2.luenemam-SNAPSHOT</version>
   <name>AceEditor</name>
 
+  <distributionManagement>
+    <repository>
+      <id>amboss</id>
+      <name>amboss-releases</name>
+      <url>http://amboss.eu.novartis.net:8280/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>amboss</id>
+      <name>amboss-snapshots</name>
+      <url>http://amboss.eu.novartis.net:8280/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <vaadin.version>6.7.6</vaadin.version>
