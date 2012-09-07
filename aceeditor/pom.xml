@@ -10,18 +10,16 @@
 
   <distributionManagement>
     <repository>
-      <id>amboss</id>
-      <name>amboss-releases</name>
-      <url>http://amboss.eu.novartis.net:8280/artifactory/libs-release-local</url>
+      <name>luenemam-release</name>
+      <url>${github-luenemam-repo}/releases</url>
     </repository>
     <snapshotRepository>
-      <id>amboss</id>
-      <name>amboss-snapshots</name>
-      <url>http://amboss.eu.novartis.net:8280/artifactory/libs-snapshot-local</url>
+      <name>luenemam-snapshot</name>
+      <url>${github-luenemam-repo}/snapshots</url>
+      <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
   </distributionManagement>
-
-
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <vaadin.version>6.7.6</vaadin.version>
@@ -210,6 +208,18 @@
   </build>
 
   <repositories>
+    <repository>
+        <id>luenemam-releases</id>
+        <url>https://github.com/luenemam/maven-repo/raw/master/releases</url>
+        <releases><enabled>true</enabled></releases>
+        <snapshots><enabled>false</enabled></snapshots>        
+     </repository>
+     <repository>
+        <id>luenemam-snapshots</id>
+        <url>https://github.com/luenemam/maven-repo/raw/master/snapshots</url>
+        <releases><enabled>false</enabled></releases>
+        <snapshots><enabled>true</enabled></snapshots>        
+     </repository>
     <repository>
       <id>vaadin-snapshots</id>
       <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
