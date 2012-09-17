@@ -10,11 +10,12 @@
 
   <distributionManagement>
     <repository>
-      <name>luenemam-release</name>
+      <id>luenemam-releases</id>
+      <name>luenemam-releases</name>
       <url>${github-luenemam-repo}/releases</url>
     </repository>
     <snapshotRepository>
-      <name>luenemam-snapshot</name>
+      <name>luenemam-snapshots</name>
       <url>${github-luenemam-repo}/snapshots</url>
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
